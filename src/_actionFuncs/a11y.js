@@ -7,7 +7,7 @@ async function addAxeScript(frame) {
 	}
 }
 
-module.exports = async (page, target=null) => {
+module.exports = async (page, props) => {
 	// TODO: configure axe
 	// TODO: handle results - save to file? assert?
 	await addAxeScript(page.mainFrame());
@@ -17,6 +17,6 @@ module.exports = async (page, target=null) => {
 	//     });
 	// });
 	const results = await page.evaluate(async () => await axe.run());
-	console.log(results)
+	return props.callback(results);
 	return results;
 }
