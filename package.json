@@ -18,5 +18,14 @@
     "@babel/core": "^7.10.3",
     "@babel/node": "^7.10.3",
     "@babel/preset-env": "^7.10.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jotty-mcclure/ui-simulator.git"
+  },
+  "keywords": ["puppeteer", "automation", "scripting", "ui simulation"],
+  "bugs": {
+    "url": "https://github.com/jotty-mcclure/ui-simulator/issues"
+  },
+  "homepage": "https://github.com/jotty-mcclure/ui-simulator"
 }
