@@ -5,10 +5,17 @@ async function handleAction(page, action, value) {
 }
 
 module.exports = async (page, actions=[]) => {
-    // TODO: expect page instance
-    for (let i=0; i<actions.length; i++ ) {
-        const action = Object.keys(actions[i])[0];
-        const value = actions[i][action];
-        await handleAction(page, action, value);
+    if ( typeof page === undefined || !actions.length )
+        return false;
+
+    try {
+        for (let i=0; i<actions.length; i++ ) {
+            const action = Object.keys(actions[i])[0];
+            const value = actions[i][action];
+            await handleAction(page, action, value);
+        }
+    }
+    catch (e) {
+        console.log(e);
     }
 }
