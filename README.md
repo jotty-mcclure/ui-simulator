@@ -50,14 +50,15 @@ example: `{ [COMMAND_NAME]: [VALUE] },`
 * [evaluate](#evaluate)
 * [focus](#focus)
 * [hover](#hover)
-* [keyboardNavigateTo](#keyboardNavigateTo)
+* [keyboardNavigateTo](#keyboardnavigateto)
 * [keypress](#keypress)
-* [navigateUrl](#navigateUrl)
+* [navigateUrl](#navigateurl)
 * [screenshot](#screenshot)
 * [select](#select)
-* [setValue](#setValue)
+* [setValue](#setvalue)
 * [type](#type)
-* [waitFor](#waitFor)
+* [waitFor](#waitfor)
+
 
 ### a11y
 Performs an accessibility analysis using the [axe-core](https://github.com/dequelabs/axe-core) accessibility rules engine.
