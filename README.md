@@ -40,6 +40,10 @@ The command definition is a simple array of objects. Each object in the array sh
 In the usage example illustrated above, we are navigating to a website, waiting 1 second, setting the focus, etc. This allows you to succinctly define the user simulation and interaction with a web interface.
 
 ## Commands
+Each command is an object with a single key/value pair. 
+
+example: `{ [COMMAND_NAME]: [VALUE] },`
+
 * [a11y](#a11y)
 * [assert](#assert)
 * [click](#click)
@@ -57,6 +61,7 @@ In the usage example illustrated above, we are navigating to a website, waiting 
 
 ### a11y
 Performs an accessibility analysis using the [axe-core](https://github.com/dequelabs/axe-core) accessibility rules engine.
+
 ```
 { a11y: {
 	callback: async (results) => {
