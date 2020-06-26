@@ -13,7 +13,7 @@ or
 * [axe-core](https://www.npmjs.com/package/axe-core)
 
 ## Usage
-```
+```javascript
 const puppeteer = require('puppeteer');
 const actions = require('ui-simulator');
 
@@ -62,7 +62,7 @@ example: `{ [COMMAND_NAME]: [VALUE] },`
 ### a11y
 Performs an accessibility analysis using the [axe-core](https://github.com/dequelabs/axe-core) accessibility rules engine.
 
-```
+```javascript
 { a11y: {
 	callback: async (results) => {
 		console.log('Hey these are results: ', results.violations.length);
@@ -78,13 +78,13 @@ Coming soon!
 
 ### click
 Simulates a mouse click on an element.
-```
+```javascript
 { click: '#my-element' },
 ```
 
 ### evaluate
 Allows you to run your own javascript.
-```
+```javascript
 { evaluate: async page => {
 	await page.evaluate(() => alert('test!'));
 	// do more cool stuff here...
@@ -94,35 +94,35 @@ Allows you to run your own javascript.
 ### focus
 Set the focus to the provided target
 
-```
+```javascript
 { focus: '#my-element' },
 ```
 
 ### hover
 Simulate a hover on the provided target
 
-```
+```javascript
 { hover: '#my-element' },
 ```
 
 ### keyboardNavigateTo
 Simulates keyboard navigation. This will continue to tab through the UI elements until it has reached the target.
 
-```
+```javascript
 { keyboardNavigateTo: '#my-element' },
 ```
 
 ### keypress
 Simulates a keypress. Use [this tool](https://w3c.github.io/uievents/tools/key-event-viewer) to help figure out keynames, if you need.
 
-```
+```javascript
 { keypress: 'Enter' },
 ```
 
 ### navigateUrl
 Navigates to the specified URL.
 
-```
+```javascript
 { navigateUrl: 'http://cool.site.com' },
 ```
 
@@ -138,27 +138,27 @@ Provide the puppeteer options object as the value.
 ### select
 Sets the value of the targeted select field.
 
-```
+```javascript
 { select: {target: '#my-select', value: 'option1'} },
 ```
 
 ### setValue
 Sets the value of the targeted input field.
 
-```
+```javascript
 { setValue: {target: '#my-field', value: 'hello world'} },
 ```
 
 ### type
 Simulates a user typing.
 
-```
+```javascript
 { type: 'hello world!' },
 ```
 
 ### waitFor
 Pause the script for a given amount of time. Time is in milliseconds.
 
-```
+```javascript
 { waitFor: 1000 },
 ```
