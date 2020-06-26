@@ -40,6 +40,20 @@ The command definition is a simple array of objects. Each object in the array sh
 In the usage example illustrated above, we are navigating to a website, waiting 1 second, setting the focus, etc. This allows you to succinctly define the user simulation and interaction with a web interface.
 
 ## Commands
+* [a11y](#a11y)
+* [assert](#assert)
+* [click](#click)
+* [evaluate](#evaluate)
+* [focus](#focus)
+* [hover](#hover)
+* [keyboardNavigateTo](#keyboardNavigateTo)
+* [keypress](#keypress)
+* [navigateUrl](#navigateUrl)
+* [screenshot](#screenshot)
+* [select](#select)
+* [setValue](#setValue)
+* [type](#type)
+* [waitFor](#waitFor)
 
 ### a11y
 Performs an accessibility analysis using the [axe-core](https://github.com/dequelabs/axe-core) accessibility rules engine.
