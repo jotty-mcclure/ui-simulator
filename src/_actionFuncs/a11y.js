@@ -31,7 +31,8 @@ module.exports = async (page, props) => {
 			await axe.run(config)
 		, config);
 
-		return callback(results);
+		await callback(results);
+		return true;
 	}
 	catch (e) {
 		// TODO: handle error
