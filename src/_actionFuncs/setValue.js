@@ -1,3 +1,9 @@
 module.exports = async (page, {target, value}) => {
-	return await page.type(target, value);
+	try {
+		await page.type(target, value);
+		return true;
+	}
+	catch(e) {
+		return false;
+	}
 }

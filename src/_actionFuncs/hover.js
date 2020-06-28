@@ -1,3 +1,10 @@
 module.exports = async (page, target) => {
-	return await page.hover(target);
+	try {
+		await await page.hover(target);
+		return true;
+	}
+	catch (e) {
+		console.log(e);
+		return false;
+	}
 }
