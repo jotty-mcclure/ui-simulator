@@ -1,6 +1,6 @@
 {
   "name": "ui-simulator",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Simulate user interactions with minimal scripting.",
   "main": "src/actions.js",
   "author": "Joshua McClure <josh@joshuadmcclure.com>",
