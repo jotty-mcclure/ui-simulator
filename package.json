@@ -1,6 +1,6 @@
 {
   "name": "ui-simulator",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "Simulate user interactions with minimal scripting.",
   "main": "src/actions.js",
   "author": "Joshua McClure <josh@joshuadmcclure.com>",
@@ -23,9 +23,19 @@
     "type": "git",
     "url": "https://github.com/jotty-mcclure/ui-simulator.git"
   },
-  "keywords": ["puppeteer", "automation", "scripting", "ui simulation"],
+  "keywords": [
+    "puppeteer",
+    "automation",
+    "scripting",
+    "ui simulation"
+  ],
   "bugs": {
     "url": "https://github.com/jotty-mcclure/ui-simulator/issues"
   },
-  "homepage": "https://github.com/jotty-mcclure/ui-simulator"
+  "homepage": "https://github.com/jotty-mcclure/ui-simulator",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "log-symbols": "^4.0.0",
+    "ora": "^4.0.4"
+  }
 }
