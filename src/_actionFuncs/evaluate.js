@@ -1,3 +1,10 @@
 module.exports = async (page, handler=async()=>{}) => {
-	return await handler(page);
+	try {
+		await handler(page);
+		return true;
+	}
+	catch(e){
+		console.log(e);
+		return false;
+	};
 }

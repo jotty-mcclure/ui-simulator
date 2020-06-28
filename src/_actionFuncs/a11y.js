@@ -36,5 +36,6 @@ module.exports = async (page, props) => {
 	catch (e) {
 		// TODO: handle error
 		console.log(e);
+		return false;
 	}
 }
